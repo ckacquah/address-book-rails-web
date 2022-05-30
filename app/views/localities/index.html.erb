@@ -1,0 +1,43 @@
+<% content_for(:breadcrumb) do %>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+  <li class="breadcrumb-item active"><a href="javascript:void(0)">Localities</a></li>
+<% end %>
+
+<% content_for(:content) do %>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card min-vh-100">
+      <div class="card-body">
+        <h1 class="card-title">Localities</h1>
+          <%= link_to "New Locality", new_locality_path, class: 'btn btn-success text-white' %>
+          <table class="table">
+
+            <thead>
+              <th>#</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Action</th>
+            <thead>
+
+            <tbody>
+                <% @localities.each_with_index do |locality, index| %>
+                  <tr>
+                    <td><%= index + 1 %></td>
+                    <td><%= locality.name %></td>
+                    <td><%= locality.description %></td>
+                    <td>
+                      <%= link_to "View", locality, class: 'btn btn-success text-white' %>
+                      <%= link_to "Edit", edit_locality_path(locality), class: 'btn btn-primary' %>
+                      <%= link_to "Delete", locality, class: 'btn btn-danger' %>
+                    </td>
+                  </tr>
+                <% end %>
+            </tbody>  
+          </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% end %>

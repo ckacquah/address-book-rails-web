@@ -1,0 +1,54 @@
+<% content_for(:breadcrumb) do %>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+  <li class="breadcrumb-item active"><a href="javascript:void(0)">Contacts</a></li>
+<% end %>
+
+
+<% content_for(:content) do %>
+
+  <h1></h1>
+
+  <div id="contacts">
+    
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card min-vh-100">
+          <div class="card-body">
+            <h1 class="card-title">Contacts</h1>
+              <%= link_to "New contact", new_contact_path, class: 'btn btn-success text-white' %>
+              <table class="table">
+
+                <thead>
+                  <th>#</th>
+                  <th>Name</th>
+                  <th>Phone</th>
+                  <th>Description</th>
+                  <th>Action</th>
+                <thead>
+
+                <tbody>
+                    <% @contacts.each_with_index do |contact, index| %>
+                      <tr>
+                        <td><%= index + 1 %></td>
+                        <td><%= contact.first_name %> <%= contact.last_name %></td>
+                        <td><%= contact.phone %></td>
+                        <td><%= contact.description %></td>
+                        <td>
+                          <%= link_to "View", contact, class: 'btn btn-success text-white' %>
+                          <%= link_to "Edit", edit_contact_path(contact), class: 'btn btn-primary' %>
+                          <%= link_to "Delete", contact, class: 'btn btn-danger' %>
+                        </td>
+                      </tr>
+                    <% end %>
+                </tbody>  
+              
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<% end %>

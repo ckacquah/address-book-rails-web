@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="RM-221.5080.196">
+    <data-source name="Rails address-book-web-app: development" uuid="18771454-9a17-4cc8-a82a-8dcbf6f813a7">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>postgres</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Rails address-book-web-app: test" uuid="d216ec83-3e8c-489e-97f1-4fb66db51057">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="Rails address-book-web-app: production" uuid="4633a21d-41d1-4b52-8ac5-442d814b7ebc">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>address_book_web_app</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

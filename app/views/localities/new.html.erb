@@ -1,0 +1,25 @@
+<% content_for(:breadcrumb) do %>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Locality</a></li>
+  <li class="breadcrumb-item active"><a href="javascript:void(0)">New</a></li>
+<% end %>
+
+<% content_for(:content) do %>
+  
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">New Locality</h4>
+        <div class="basic-form">
+        <%= render "form", locality: @locality %>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div>
+    <%= link_to "Back to localities", localities_path, class: "btn btn-primary text-white" %>
+  </div>
+
+<% end %>

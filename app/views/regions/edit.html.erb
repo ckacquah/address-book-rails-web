@@ -1,0 +1,36 @@
+<h1>Editing region</h1>
+
+<%= render "form", region: @region %>
+
+<br>
+
+<div>
+  <%= link_to "Show this region", @region %> |
+  <%= link_to "Back to regions", regions_path %>
+</div>
+
+<% content_for(:breadcrumb) do %>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Region</a></li>
+  <li class="breadcrumb-item active"><a href="javascript:void(0)"><%= @region.name %></a></li>
+<% end %>
+
+<% content_for(:content) do %>
+  
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Edit Region</h4>
+        <div class="basic-form">
+        <%= render "form", region: @region %>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div>
+    <%= link_to "Back to regions", regions_path, class: "btn btn-primary" %>
+  </div>
+
+<% end %>

@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  assigned_code: 
+  name: MyString
+  description: MyText
+  del_status: false
+  active_status: false
+  region_code: MyString
+
+two:
+  assigned_code: 
+  name: MyString
+  description: MyText
+  del_status: false
+  active_status: false
+  region_code: MyString

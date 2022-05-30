@@ -1,0 +1,28 @@
+<% content_for(:breadcrumb) do %>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+  <li class="breadcrumb-item"><a href="javascript:void(0)">Suburb</a></li>
+  <li class="breadcrumb-item active"><a href="javascript:void(0)"><%= @suburb.name %></a></li>
+<% end %>
+
+
+<% content_for(:content) do %>
+
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Suburb Information</h4>
+
+        <%= render @suburb %>
+        
+        <div>
+          <%= link_to "Edit", edit_suburb_path(@suburb), class: 'btn btn-success' %>
+          <%= link_to "Back", suburbs_path, class: 'btn btn-primary' %>
+          <%= button_to "Delete", @suburb, class: 'btn btn-danger', method: :delete %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<% end %>
