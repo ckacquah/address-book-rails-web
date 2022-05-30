@@ -22,7 +22,16 @@ Locality.create(name: 'Opkonglo', description: 'This is the first locality I cre
 
 
 
-Contact.create(first_name: 'John', last_name: 'Doe', description: 'This is my new friend', phone: '233204567890',
+Contact.create(first_name: 'John', last_name: 'Doe', description: 'This is my new friend', phone: '1234567890',
 
                locality_code: Locality.first.assigned_code)
 
+User.create(
+  email: "mail@mail.com",
+  first_name: "Luke",
+  last_name: "Graham",
+  phone: "233123456789",
+  password: "test1234",
+  active_status: true,
+  del_status: false
+)

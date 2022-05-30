@@ -1,4 +1,5 @@
 class SuburbsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_suburb, only: %i[show edit update destroy]
 
   # GET /suburbs or /suburbs.json

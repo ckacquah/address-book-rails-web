@@ -1,4 +1,5 @@
 class CityTownsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_city_town, only: %i[ show edit update destroy ]
 
   # GET /city_towns or /city_towns.json

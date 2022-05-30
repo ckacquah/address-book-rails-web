@@ -20,6 +20,7 @@ gem 'tzinfo-data'
 # gem "image_processing", "~> 1.2"
 gem 'simple_form'
 gem 'webpacker'
+gem 'devise'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
