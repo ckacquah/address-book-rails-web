@@ -30,7 +30,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_05_19_164859) do
     t.string "last_name"
     t.string "first_name"
     t.string "phone"
-    t.string "name"
     t.text "description"
     t.boolean "del_status", default: false
     t.boolean "active_status", default: true

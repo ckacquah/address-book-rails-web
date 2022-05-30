@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac27bde-206c-4529-91b7-e413c010ee1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/city_towns/get_cities.js.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/address-book-web-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/address-book-web-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/city_towns_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/city_towns_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/localities_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/localities_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/regions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/regions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/city_town.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/city_town.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/concerns/handle_safely.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/concerns/handle_safely.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/locality.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/locality.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/region.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/region.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/suburb.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/suburb.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city_towns/_city_town.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/_city_town.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city_towns/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city_towns/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/_contact.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_contact.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/localities/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/localities/_locality.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/_locality.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/regions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/regions/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/regions/_region.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/regions/_region.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/suburbs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suburbs/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/suburbs/_suburb.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suburbs/_suburb.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpacker.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpacker.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220519164859_create_contacts.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220519164859_create_contacts.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,12 +55,13 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/c.acquah/code/address-book-web-app",
+    "last_opened_file_path": "C:/Users/Cyril Kofi Acquah/Code/address-book-rails-web",
     "ruby.rails.projectView.checked": "true",
     "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="5ac27bde-206c-4529-91b7-e413c010ee1c" name="Changes" comment="" />
@@ -40,6 +71,7 @@
       <updated>1653003930463</updated>
       <workItem from="1653003933570" duration="27000" />
       <workItem from="1653576047386" duration="2044000" />
+      <workItem from="1653908439174" duration="3395000" />
     </task>
     <servers />
   </component>

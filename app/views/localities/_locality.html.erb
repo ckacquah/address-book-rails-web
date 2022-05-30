@@ -1,8 +1,4 @@
 <div id="<%= dom_id locality %>">
-  <p>
-    <strong>Assigned code:</strong>
-    <%= locality.assigned_code %>
-  </p>
 
   <p>
     <strong>Name:</strong>
@@ -15,18 +11,8 @@
   </p>
 
   <p>
-    <strong>Del status:</strong>
-    <%= locality.del_status %>
-  </p>
-
-  <p>
-    <strong>Active status:</strong>
-    <%= locality.active_status %>
-  </p>
-
-  <p>
-    <strong>Suburb code:</strong>
-    <%= locality.suburb_code %>
+    <strong>Suburb:</strong>
+    <%= locality.suburb.name %>
   </p>
 
 </div>

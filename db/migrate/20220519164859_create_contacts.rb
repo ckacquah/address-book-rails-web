@@ -5,7 +5,6 @@ class CreateContacts < ActiveRecord::Migration[7.0]
       t.string :last_name
       t.string :first_name
       t.string :phone
-      t.string :name
       t.text :description
       t.boolean :del_status, default: false
       t.boolean :active_status, default: true

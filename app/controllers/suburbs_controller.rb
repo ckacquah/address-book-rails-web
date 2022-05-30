@@ -8,7 +8,7 @@ class SuburbsController < ApplicationController
     puts params['filter-by-region']
     puts '##########################################'
     puts '##########################################'
-    @suburbs = Suburb.all
+    @suburbs = Suburb.active_and_not_deleted
   end
 
   # GET /suburbs/1 or /suburbs/1.json
@@ -28,9 +28,11 @@ class SuburbsController < ApplicationController
 
     respond_to do |format|
       if @suburb.save
-        format.html { redirect_to suburb_url(@suburb), notice: 'Suburb was successfully created.' }
+        flash[:success] = "Suburb was successfully created."
+        format.html { redirect_to suburb_url(@suburb) }
         format.json { render :show, status: :created, location: @suburb }
       else
+        flash[:error] = "Suburb creation failed."
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @suburb.errors, status: :unprocessable_entity }
       end
@@ -40,10 +42,12 @@ class SuburbsController < ApplicationController
   # PATCH/PUT /suburbs/1 or /suburbs/1.json
   def update
     respond_to do |format|
-      if @suburb.update(suburb_params)
-        format.html { redirect_to suburb_url(@suburb), notice: 'Suburb was successfully updated.' }
+      if @suburb.safe_update(suburb_params)
+        flash[:success] = "Suburb was successfully updated."
+        format.html { redirect_to suburb_url(@suburb) }
         format.json { render :show, status: :ok, location: @suburb }
       else
+        flash[:error] = "Suburb update failed."
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @suburb.errors, status: :unprocessable_entity }
       end
@@ -52,10 +56,11 @@ class SuburbsController < ApplicationController
 
   # DELETE /suburbs/1 or /suburbs/1.json
   def destroy
-    @suburb.destroy
+    @suburb.safe_delete
 
     respond_to do |format|
-      format.html { redirect_to suburbs_url, notice: 'Suburb was successfully destroyed.' }
+      flash[:success] = "Suburb was successfully destroyed."
+      format.html { redirect_to suburbs_url}
       format.json { head :no_content }
     end
   end
@@ -64,11 +69,11 @@ class SuburbsController < ApplicationController
 
   # Use callbacks to share common setup or constraints between actions.
   def set_suburb
-    @suburb = Suburb.find(params[:id])
+    @suburb = Suburb.find_safely(params[:id])
   end
 
   # Only allow a list of trusted parameters through.
   def suburb_params
-    params.require(:suburb).permit(:assigned_code, :name, :description, :del_status, :active_status, :city_town_code)
+    params.require(:suburb).permit(:name, :description, :city_town_code)
   end
 end

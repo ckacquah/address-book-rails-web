@@ -1,10 +1,5 @@
 <div id="<%= dom_id suburb %>">
   <p>
-    <strong>Assigned code:</strong>
-    <%= suburb.assigned_code %>
-  </p>
-
-  <p>
     <strong>Name:</strong>
     <%= suburb.name %>
   </p>
@@ -15,18 +10,8 @@
   </p>
 
   <p>
-    <strong>Del status:</strong>
-    <%= suburb.del_status %>
-  </p>
-
-  <p>
-    <strong>Active status:</strong>
-    <%= suburb.active_status %>
-  </p>
-
-  <p>
-    <strong>City town code:</strong>
-    <%= suburb.city_town_code %>
+    <strong>City or Town:</strong>
+    <%= suburb.city_town.name %>
   </p>
 
 </div>
