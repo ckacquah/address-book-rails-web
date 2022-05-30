@@ -16,10 +16,6 @@ module HandleSafely
 
   class_methods do
 
-    def only_active
-      active_and_not_deleted
-    end
-
     def find_safely(id)
       active_and_not_deleted.where(assigned_code: id).order(:updated_at).first
     end
@@ -31,9 +27,7 @@ module HandleSafely
   end
 
   # The function updates the model by making the previous record inactive
-
   # and adding the new update into the database
-
   def safe_update(update_params)
     new_params = {} # new parameters for the new update
     attribute_names.each do |attribute_name|

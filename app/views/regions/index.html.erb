@@ -29,7 +29,7 @@
                     <td>
                       <%= link_to "View", region, class: 'btn btn-success text-white' %>
                       <%= link_to "Edit", edit_region_path(region), class: 'btn btn-primary' %>
-                      <%= link_to "Delete", region, class: 'btn btn-danger' %>
+                      <%= link_to "Delete", region, class: 'btn btn-danger', method: :delete %>
                     </td>
                   </tr>
                 <% end %>

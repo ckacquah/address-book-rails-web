@@ -29,7 +29,7 @@
                     <td>
                       <%= link_to "View", locality, class: 'btn btn-success text-white' %>
                       <%= link_to "Edit", edit_locality_path(locality), class: 'btn btn-primary' %>
-                      <%= link_to "Delete", locality, class: 'btn btn-danger' %>
+                      <%= link_to "Delete", locality, class: 'btn btn-danger', method: :delete %>
                     </td>
                   </tr>
                 <% end %>
