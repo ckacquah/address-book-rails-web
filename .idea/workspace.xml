@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac27bde-206c-4529-91b7-e413c010ee1c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/address-book-web-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/address-book-web-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/city_towns_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/city_towns_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/localities_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/localities_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/regions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/regions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +44,7 @@
       <updated>1653003930463</updated>
       <workItem from="1653003933570" duration="27000" />
       <workItem from="1653576047386" duration="2044000" />
-      <workItem from="1653908439174" duration="7561000" />
+      <workItem from="1653908439174" duration="8629000" />
     </task>
     <servers />
   </component>

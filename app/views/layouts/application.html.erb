@@ -17,7 +17,7 @@
 
   </head>
 
-  <body>
+  <body class="vh-100">
     
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
         <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
@@ -31,18 +31,18 @@
         </symbol>
     </svg>
 
-    <% if content_for?(:content) %>
-      
     <!--*******************
         Preloader start
     ********************-->
     <div id="preloader">
-        <div class="loader">
-            <svg class="circular" viewBox="25 25 50 50">
-                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
-            </svg>
-        </div>
+      <div class="loader">
+        <svg class="circular" viewBox="25 25 50 50">
+          <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+        </svg>
+      </div>
     </div>
+
+    <% if content_for?(:content) %>
     <!--*******************
         Preloader end
     ********************-->
@@ -152,11 +152,11 @@
         Main wrapper end
     ***********************************-->
 
-    <% else %>
-    
-      <%= yield %>
-    
-    <% end %>
+  <% else %>
+
+    <%= yield %>
+
+  <% end %>
 
     <%= javascript_pack_tag "application" %>
 
