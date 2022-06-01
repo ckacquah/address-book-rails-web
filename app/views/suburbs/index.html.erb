@@ -9,13 +9,14 @@
   <div class="col-lg-12">
     <div class="card min-vh-100">
       <div class="card-body">
+          <%= link_to "+ Add Suburb", new_suburb_path, class: 'btn btn-success text-white mb-3' %>
         <h1 class="card-title">Suburbs</h1>
-          <%= link_to "New suburb", new_suburb_path, class: 'btn btn-success text-white' %>
           <table class="table table-sm">
 
             <thead>
               <th>#</th>
               <th>Name</th>
+              <th>City</th>
               <th>Description</th>
               <th>Action</th>
             <thead>
@@ -25,6 +26,7 @@
                   <tr>
                     <td><%= index + 1 %></td>
                     <td><%= suburb.name %></td>
+                    <td><%= suburb.city_town.name %></td>
                     <td><%= suburb.description %></td>
                     <td>
                       <%= link_to "View", suburb, class: 'btn btn-success text-white' %>

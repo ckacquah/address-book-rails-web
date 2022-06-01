@@ -9,13 +9,14 @@
   <div class="col-lg-12">
     <div class="card min-vh-100">
       <div class="card-body">
+          <%= link_to "+ Add City", new_city_town_path, class: 'btn btn-success text-white mb-3' %>
         <h1 class="card-title">Cities</h1>
-          <%= link_to "New City", new_city_town_path, class: 'btn btn-success text-white' %>
           <table class="table table-sm">
 
             <thead>
               <th>#</th>
               <th>Name</th>
+              <th>Region</th>
               <th>Description</th>
               <th>Action</th>
             <thead>
@@ -25,6 +26,7 @@
                   <tr>
                     <td><%= index + 1 %></td>
                     <td><%= city_town.name %></td>
+                    <td><%= city_town.region.name %></td>
                     <td><%= city_town.description %></td>
                     <td>
                       <%= link_to "View", city_town, class: 'btn btn-success text-white' %>
