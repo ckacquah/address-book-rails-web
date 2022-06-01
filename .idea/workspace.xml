@@ -3,12 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="5ac27bde-206c-4529-91b7-e413c010ee1c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/city_towns/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/localities/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/regions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/regions/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/suburbs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suburbs/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city_towns/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city_towns/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city_towns/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/localities/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/localities/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/localities/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/regions/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/regions/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/regions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/regions/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/regions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/regions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/suburbs/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suburbs/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/suburbs/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suburbs/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/suburbs/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suburbs/new.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +63,7 @@
       <workItem from="1653576047386" duration="2044000" />
       <workItem from="1653908439174" duration="18714000" />
       <workItem from="1653986784708" duration="5343000" />
-      <workItem from="1654075831828" duration="6769000" />
+      <workItem from="1654075831828" duration="7908000" />
     </task>
     <servers />
   </component>

@@ -5,7 +5,11 @@
 <% end %>
 
 <% content_for(:content) do %>
-  
+
+  <div>
+    <%= link_to "< Back", city_towns_path, class: "btn btn-primary mb-2" %>
+  </div>
+
 <div class="row">
   <div class="col-lg-12">
     <div class="card">
@@ -13,14 +17,12 @@
         <h4 class="card-title">New City</h4>
         <div class="basic-form">
         <%= render "form", city_town: @city_town %>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
 
-  <div>
-    <%= link_to "Back to contacts", contacts_path %>
-  </div>
 
 <% end %>
