@@ -1,5 +1,8 @@
 class Contact < ApplicationRecord
   include HandleSafely
+  include HasSummary
+  
+  attr_accessor :region, :cities, :suburbs, :localities                                             
 
   belongs_to :locality,  -> { active }, class_name: "Locality", foreign_key: "locality_code"
   validates_associated :locality

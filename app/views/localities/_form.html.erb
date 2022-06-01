@@ -4,9 +4,9 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
+    <%= f.association :suburb, collection: Suburb.active_and_not_deleted.order(:name), prompt: "Choose a Suburb"%>
     <%= f.input :name %>
     <%= f.input :description %>
-    <%= f.association :suburb, collection: Suburb.active_and_not_deleted.order(:name), prompt: "Choose a Suburb"%>
   </div>
 
   <div class="form-actions">

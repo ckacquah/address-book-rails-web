@@ -2,10 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac27bde-206c-4529-91b7-e413c010ee1c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/views/contacts/get_cities.js.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/city_town.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/city_town.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/locality.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/locality.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/region.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/region.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/contacts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/_header.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/localities/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/migrate/20220530125330_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220530125330_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,16 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Cyril Kofi Acquah/Code/address-book-rails-web",
-    "ruby.rails.projectView.checked": "true",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Cyril Kofi Acquah/Code/address-book-rails-web/app/views/contacts&quot;,
+    &quot;ruby.rails.projectView.checked&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Cyril Kofi Acquah\Code\address-book-rails-web\app\views\contacts" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
@@ -44,7 +66,8 @@
       <updated>1653003930463</updated>
       <workItem from="1653003933570" duration="27000" />
       <workItem from="1653576047386" duration="2044000" />
-      <workItem from="1653908439174" duration="8629000" />
+      <workItem from="1653908439174" duration="18714000" />
+      <workItem from="1653986784708" duration="5343000" />
     </task>
     <servers />
   </component>

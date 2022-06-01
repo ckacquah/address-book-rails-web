@@ -4,10 +4,10 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
+    <%= f.association :city_town, collection: CityTown.active_and_not_deleted.order(:name), prompt: "Choose a City", label: false%>
     <%= f.input :name %>
     <%= f.input :description %>
     <%= f.label :street, 'City or Town' %>
-    <%= f.association :city_town, collection: CityTown.active_and_not_deleted.order(:name), prompt: "Choose a City", label: false%>
   </div>
 
   <div class="form-actions">

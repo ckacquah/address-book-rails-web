@@ -7,11 +7,72 @@
     <%= f.input :first_name %>
     <%= f.input :last_name %>
     <%= f.input :phone %>
+    <%= f.input :region, prompt: "Select the region", collection: Region.active_and_not_deleted.order(:name), label_method: :name, value_method: :assigned_code, input_html: {id: "region"} %>
+    <%= f.input :cities, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "cities"} %>
+    <%= f.input :suburbs, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "suburbs"} %>
+    <%= f.association :locality, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "localities"} %>
     <%= f.input :description %>
-    <%= f.association :locality, collection: Locality.active_and_not_deleted.order(:name), prompt: "Choose a Locality"%>
   </div>
 
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary text-white" %>
   </div>
+<% end %>
+
+
+<% content_for(:scripts) do %>
+
+<script type="text/javascript" charset="utf-8">
+
+    $(document).ready(function(){
+
+        $('#region').change(function() {
+            var region = document.getElementById("region");
+            $('#cities').html("");
+            $('#suburbs').html("");
+            $('#localities').html("");
+            if(region.value != ""){
+                $.ajax({
+                    url: '<%= get_cities_path %>',
+                    data: {
+                        region_code : region.value
+                    },
+                    dataType: "script"
+                });
+            }
+        });
+
+        $('#cities').change(function() {
+            var city = document.getElementById("cities");
+            $('#suburbs').html("");
+            $('#localities').html("");
+            if(city.value != ""){
+                $.ajax({
+                    url: '<%= get_suburbs_path %>',
+                    data: {
+                        city_town_code : city.value
+                    },
+                    dataType: "script"
+                });
+            }
+        });
+
+        $('#suburbs').change(function() {
+            var suburb = document.getElementById("suburbs");
+            $('#localities').html("");
+            if(suburb.value != ""){
+                $.ajax({
+                    url: '<%= get_localities_path %>',
+                    data: {
+                        suburb_code : suburb.value
+                    },
+                    dataType: "script"
+                });
+            }
+        });
+
+    });
+
+</script>
+
 <% end %>

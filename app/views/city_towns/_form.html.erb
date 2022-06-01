@@ -4,9 +4,9 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
+    <%= f.association :region, collection: Region.active_and_not_deleted.order(:name), prompt: "Choose a Region"%>
     <%= f.input :name %>
     <%= f.input :description %>
-    <%= f.association :region, collection: Region.active_and_not_deleted.order(:name), prompt: "Choose a Region"%>
   </div>
 
   <div class="form-actions">

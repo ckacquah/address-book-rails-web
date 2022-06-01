@@ -1,5 +1,52 @@
 <% content_for(:content) do %>
-    <h1>Home#index</h1>
-    <p>Find me in app/views/home/index.html.erb</p>
-    <%= link_to regions_path, class: "btn btn-succes" %>
+  <div class="row">
+    <div class="col-lg-3 col-sm-6">
+      <div class="card gradient-1">
+        <div class="card-body">
+          <h3 class="card-title text-white">Contacts</h3>
+          <div class="d-inline-block">
+            <h2 class="text-white"><%= @summary[:contact][:count] %></h2>
+            <p class="text-white mb-0"><%= @summary[:contact][:start][:month] %> <%= @summary[:contact][:start][:year] %> - <%= @summary[:contact][:current][:month] %> <%= @summary[:contact][:current][:year] %></p>
+          </div>
+          <span class="float-right display-5 opacity-5"><i class="fa fa-address-book"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card gradient-2">
+        <div class="card-body">
+          <h3 class="card-title text-white">Localities</h3>
+          <div class="d-inline-block">
+            <h2 class="text-white"><%= @summary[:locality][:count] %></h2>
+            <p class="text-white mb-0"><%= @summary[:locality][:start][:month] %> <%= @summary[:locality][:start][:year] %> - <%= @summary[:locality][:current][:month] %> <%= @summary[:locality][:current][:year] %></p>
+          </div>
+          <span class="float-right display-5 opacity-5"><i class="fa fa-map"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card gradient-4">
+        <div class="card-body">
+          <h3 class="card-title text-white">Regions</h3>
+          <div class="d-inline-block">
+             <h2 class="text-white"><%= @summary[:regions][:count] %></h2>
+            <p class="text-white mb-0"><%= @summary[:regions][:start][:month] %> <%= @summary[:regions][:start][:year] %> - <%= @summary[:regions][:current][:month] %> <%= @summary[:regions][:current][:year] %></p>
+          </div>
+          <span class="float-right display-5 opacity-5"><i class="fa fa-map-marker"></i></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-6">
+      <div class="card gradient-3">
+        <div class="card-body">
+          <h3 class="card-title text-white">Users</h3>
+          <div class="d-inline-block">
+             <h2 class="text-white"><%= @summary[:users][:count] %></h2>
+            <p class="text-white mb-0"><%= @summary[:users][:start][:month] %> <%= @summary[:users][:start][:year] %> - <%= @summary[:users][:current][:month] %> <%= @summary[:users][:current][:year] %></p>
+          </div>
+          <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
 <% end %>
