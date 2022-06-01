@@ -1,6 +1,6 @@
 <% content_for(:breadcrumb) do %>
-  <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
-  <li class="breadcrumb-item"><a href="javascript:void(0)">Regions</a></li>
+  <li class="breadcrumb-item"><%=link_to "Dashboard", home_index_path %></li>
+  <li class="breadcrumb-item"><%=link_to "Regions", regions_path %></li>
   <li class="breadcrumb-item active"><a href="javascript:void(0)">New</a></li>
 <% end %>
 
