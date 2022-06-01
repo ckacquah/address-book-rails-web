@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ac27bde-206c-4529-91b7-e413c010ee1c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/contacts/get_cities.js.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/contacts_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/suburbs_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/packs/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/packs/application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/city_town.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/city_town.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/contact.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/contact.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/locality.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/locality.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/region.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/region.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/city_towns/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/city_towns/_form.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/contacts/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/contacts/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/_header.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/_header.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/localities/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/edit.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20220530125330_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20220530125330_devise_create_users.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/seeds.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/seeds.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/localities/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/localities/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/regions/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/regions/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/suburbs/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/suburbs/_form.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +54,7 @@
       <workItem from="1653576047386" duration="2044000" />
       <workItem from="1653908439174" duration="18714000" />
       <workItem from="1653986784708" duration="5343000" />
+      <workItem from="1654075831828" duration="6769000" />
     </task>
     <servers />
   </component>
