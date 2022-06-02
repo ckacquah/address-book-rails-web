@@ -1,27 +1,44 @@
 <div id="<%= dom_id contact %>">
-  <p>
-    <strong>Last name:</strong>
-    <%= contact.last_name %>
-  </p>
-
-  <p>
-    <strong>First name:</strong>
-    <%= contact.first_name %>
-  </p>
-
-  <p>
-    <strong>Phone:</strong>
-    <%= contact.phone %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= contact.description %>
-  </p>
-
-  <p>
-    <strong>Locality:</strong>
-    <%= contact.locality.name %>
-  </p>
+  <table class="table table-border border-white">
+    <thead style="background-color: #12213B" class="">
+      <th colspan="2" class="text-white"  style="border-bottom: solid">
+        <%= contact.first_name %> <%= contact.last_name %>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Phone
+        </td>
+        <td>
+          <%= contact.phone %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Locality
+        </td>
+        <td>
+          <%= contact.locality.name %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Description
+        </td>
+        <td>
+          <%= contact.description %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Data Created
+        </td>
+        <td>
+          <%= contact.created_at %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>

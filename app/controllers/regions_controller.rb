@@ -16,7 +16,9 @@ class RegionsController < ApplicationController
 
   # GET /regions/1 or /regions/1.json
 
-  def show; end
+  def show
+    @city_towns = @region.city_towns
+  end
 
 
 

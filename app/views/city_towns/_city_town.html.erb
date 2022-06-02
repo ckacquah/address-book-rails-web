@@ -1,18 +1,29 @@
 <div id="<%= dom_id city_town %>">
 
-  <p>
-    <strong>Name:</strong>
-    <%= city_town.name %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= city_town.description %>
-  </p>
-
-  <p>
-    <strong>Region:</strong>
-    <%= city_town.region.name %>
-  </p>
+  <table class="table table-border border-white">
+    <thead style="background-color: #12213B" class="">
+      <th colspan="2" class="text-white"  style="border-bottom: solid">
+        <%= city_town.name %>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Description
+        </td>
+        <td>
+          <%= city_town.description %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Data Created
+        </td>
+        <td>
+          <%= city_town.created_at %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>

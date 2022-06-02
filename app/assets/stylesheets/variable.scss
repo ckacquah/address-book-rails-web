@@ -42,6 +42,7 @@ $yellow-alt: #f39c12 !default; //**
 $green-alt: #00bc8c !default; //**
 $teal-alt: #45b5aa !default; // Panatone CotY 2010
 $cyan-alt: #17a2b8 !default;
+$custom-alt: #12213B !default;
 
 $colors-alt: (
     "blue": $blue-alt,
@@ -56,6 +57,7 @@ $colors-alt: (
     "cyan": $cyan-alt,
     "white": $white-alt,
     "black": $black-alt,
+    "custom": $custom-alt,
     "gray": #7e7e7e,
     // $gray-600,
     "gray-dark": #121212 //$gray-800
@@ -78,6 +80,7 @@ $theme-colors-alt: (
     "warning": $warning-alt,
     "danger": $danger-alt,
     "light": $light-alt,
+    "custom": $custom-alt,
     "dark": $dark-alt) !default;
 
 $theme-colors-rgb-alt: map-loop($theme-colors-alt, to-rgb, "$value") !default;
@@ -414,6 +417,7 @@ $table-variants-alt: (
     "danger": shift-color($danger-alt, $table-bg-scale-alt),
     "light": $light-alt,
     "dark": $dark-alt,
+    "custom": $custom-alt,
     ) !default;
 
 

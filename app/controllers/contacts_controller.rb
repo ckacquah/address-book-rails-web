@@ -24,7 +24,7 @@ class ContactsController < ApplicationController
     if @region
       code = @region.assigned_code
       @cities = CityTown.active_and_not_deleted.where(region_code: code).map { |i| [i.name, i.assigned_code] }
-      @cities.insert(0, ["Select the City", ""])
+      @cities.insert(0, ['Select the City', ''])
       @cities
     end
   end
@@ -35,7 +35,7 @@ class ContactsController < ApplicationController
     if @city_town
       code = @city_town.assigned_code
       @suburbs = Suburb.active_and_not_deleted.where(city_town_code: code).map { |i| [i.name, i.assigned_code] }
-      @suburbs.insert(0, ["Select the Suburb", ""])
+      @suburbs.insert(0, ['Select the Suburb', ''])
       @suburbs
     end
   end
@@ -46,7 +46,7 @@ class ContactsController < ApplicationController
     if @suburb
       code = @suburb.assigned_code
       @localities = Locality.active_and_not_deleted.where(suburb_code: code).map { |i| [i.name, i.assigned_code] }
-      @localities.insert(0, ["Select the Locality", ""])
+      @localities.insert(0, ['Select the Locality', ''])
       @localities
     end
   end

@@ -1,6 +1,6 @@
 class CityTownsController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_city_town, only: %i[ show edit update destroy ]
+  before_action :set_city_town, only: %i[show edit update destroy]
 
   # GET /city_towns or /city_towns.json
   def index
@@ -9,6 +9,7 @@ class CityTownsController < ApplicationController
 
   # GET /city_towns/1 or /city_towns/1.json
   def show
+    @suburbs = @city_town.suburbs
   end
 
   # GET /city_towns/new
@@ -17,8 +18,7 @@ class CityTownsController < ApplicationController
   end
 
   # GET /city_towns/1/edit
-  def edit
-  end
+  def edit; end
 
   def get_cities
     region_code = params[:region_code]

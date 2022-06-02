@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   resources :city_towns
   resources :regions
   devise_for :users
-
+  
+  get 'profile' => 'profile#index'
   get 'get_cities' => 'contacts#get_cities'
   get 'get_suburbs' => 'contacts#get_suburbs'
   get 'get_localities' => 'contacts#get_localities'

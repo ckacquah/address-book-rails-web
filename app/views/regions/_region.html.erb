@@ -1,13 +1,29 @@
 <div id="<%= dom_id region %>">
 
-  <p>
-    <strong>Name:</strong>
-    <%= region.name %>
-  </p>
-
-  <p>
-    <strong>Description:</strong>
-    <%= region.description %>
-  </p>
+  <table class="table table-border border-white">
+    <thead style="background-color: #12213B" class="">
+      <th colspan="2" class="text-white"  style="border-bottom: solid">
+        <%= region.name %> Region
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Description
+        </td>
+        <td>
+          <%= region.description %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Data Created
+        </td>
+        <td>
+          <%= region.created_at %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>

@@ -9,15 +9,17 @@
   <div class="col-lg-12">
     <div class="card min-vh-100">
       <div class="card-body">
-        <%= link_to "+ Add Region", new_region_path, class: 'btn btn-success text-white mb-3' %>
+        <%= link_to "+ Add Region", new_region_path, class: 'btn btn-feature text-white mb-3' %>
         <h1 class="card-title">Regions</h1>
+        <div class="row">
+        <div class="col-10">
           <table class="table table-sm">
 
             <thead>
               <th>#</th>
               <th>Name</th>
               <th>Description</th>
-              <th>Action</th>
+              <th></th>
             <thead>
 
             <tbody>
@@ -27,10 +29,10 @@
                     <td><%= region.name %></td>
                     <td><%= region.description %></td>
                     <td>
-                      <%= link_to "View", region, class: 'btn btn-success text-white' %>
-                      <%= link_to "Edit", edit_region_path(region), class: 'btn btn-primary' %>
-                      <%#= link_to "Delete", region, class: 'btn btn-danger', method: :delete %>
-                      <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal<%= region.id %>">
+                      <%= link_to "View", region, class: 'mx-1 btn btn-feature text-white' %>
+                      <%= link_to "Edit", edit_region_path(region), class: 'mx-1 btn btn-outline-edit' %>
+                      <%#= link_to "Delete", region, class: 'mx-1 btn btn-danger', method: :delete %>
+                      <button type="button" class="mx-1 btn btn-danger" data-toggle="modal" data-target="#modal<%= region.id %>">
                         Delete
                       </button>
                       <div>
@@ -60,6 +62,8 @@
                 <% end %>
             </tbody>  
           </table>
+        </div>
+        </div>
       </div>
     </div>
   </div>

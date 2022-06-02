@@ -1,17 +1,37 @@
 <div id="<%= dom_id suburb %>">
-  <p>
-    <strong>Name:</strong>
-    <%= suburb.name %>
-  </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= suburb.description %>
-  </p>
-
-  <p>
-    <strong>City or Town:</strong>
-    <%= suburb.city_town.name %>
-  </p>
+  <table class="table table-border border-white">
+    <thead style="background-color: #12213B" class="">
+      <th colspan="2" class="text-white"  style="border-bottom: solid">
+        <%= suburb.name %>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          City
+        </td>
+        <td>
+          <%= suburb.city_town.name %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Description
+        </td>
+        <td>
+          <%= suburb.description %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Data Created
+        </td>
+        <td>
+          <%= suburb.created_at %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
 </div>

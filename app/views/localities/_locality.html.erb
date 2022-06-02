@@ -1,18 +1,38 @@
 <div id="<%= dom_id locality %>">
 
-  <p>
-    <strong>Name:</strong>
-    <%= locality.name %>
-  </p>
+  <table class="table table-border border-white">
+    <thead style="background-color: #12213B" class="">
+      <th colspan="2" class="text-white"  style="border-bottom: solid">
+        <%= locality.name %>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Suburb
+        </td>
+        <td>
+          <%= locality.suburb.name %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Description
+        </td>
+        <td>
+          <%= locality.description %>
+        </td>
+      </tr>
+      <tr>
+        <td class=" text-white" style="background-color: #253858">
+          Data Created
+        </td>
+        <td>
+          <%= locality.created_at %>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
-  <p>
-    <strong>Description:</strong>
-    <%= locality.description %>
-  </p>
-
-  <p>
-    <strong>Suburb:</strong>
-    <%= locality.suburb.name %>
-  </p>
 
 </div>
