@@ -134,6 +134,7 @@ class ContactsController < ApplicationController
 
     end
 
+
   end
 
 
@@ -144,7 +145,10 @@ class ContactsController < ApplicationController
 
     respond_to do |format|
 
-      if @contact.safe_update(contact_params)
+
+      @contact, updated_successfully = @contact.safe_update(contact_params)
+
+      if updated_successfully
 
         flash[:success] = 'Contact was successfully updated.'
 
@@ -173,8 +177,6 @@ class ContactsController < ApplicationController
   def destroy
 
     @contact.safe_delete
-
-
 
     flash[:success] = 'Contact was successfully destroyed.'
 

@@ -1,6 +1,7 @@
 <% content_for(:content) do %>
   <div class="row">
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <%= link_to contacts_path do %>
       <div class="card gradient-1">
         <div class="card-body">
           <h3 class="card-title text-white">Contacts</h3>
@@ -11,8 +12,10 @@
           <span class="float-right display-5 opacity-5"><i class="fa fa-address-book"></i></span>
         </div>
       </div>
+      <% end %>
     </div>
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+      <%= link_to localities_path do %>
       <div class="card gradient-2">
         <div class="card-body">
           <h3 class="card-title text-white">Localities</h3>
@@ -23,8 +26,10 @@
           <span class="float-right display-5 opacity-5"><i class="fa fa-map"></i></span>
         </div>
       </div>
+      <% end %>
     </div>
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-3 col-md-6 col-sm-6  col-xs-12">
+      <%= link_to regions_path do %>
       <div class="card gradient-4">
         <div class="card-body">
           <h3 class="card-title text-white">Regions</h3>
@@ -35,8 +40,9 @@
           <span class="float-right display-5 opacity-5"><i class="fa fa-map-marker"></i></span>
         </div>
       </div>
+      <% end %>
     </div>
-    <div class="col-lg-3 col-sm-6">
+    <div class="col-lg-3 col-md-6 col-sm-6  col-xs-12">
       <div class="card gradient-3">
         <div class="card-body">
           <h3 class="card-title text-white">Users</h3>

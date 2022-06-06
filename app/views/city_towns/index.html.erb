@@ -52,8 +52,8 @@
                                 Are you sure you want to delete this city?(<strong><%= city_town.name %></strong>)
                               </div>
                               <div class="modal-footer">
-                                <button type="button" class="btn text-white btn-secondary" data-dismiss="modal">Close</button>
-                                <%= link_to "Delete", city_town, class: 'btn btn-danger', method: :delete %>
+                                <button type="button" class="btn btn-outline-edit" data-dismiss="modal">Cancel</button>
+                                <%= link_to "Proceed", city_town, class: 'btn btn-feature', method: :delete %>
                               </div>
                             </div>
                           </div>

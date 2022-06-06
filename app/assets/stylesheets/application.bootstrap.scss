@@ -17,4 +17,13 @@ $view-bg: #032264;
 .btn-outline-edit {
     @include button-outline-variant($view-bg, $active-border: $view-bg);
     border-color: $view-bg !important;
+    background-color: #FAFAFA;
+}
+//
+//.table-custom {
+//  @include table-variant(borderless, $background);
+//}
+
+.bg-custom-dark {
+  @include gradient-bg($feature-bg);
 }
