@@ -62,6 +62,12 @@ Locality.create(name: 'Gated Estates', description: 'This is the third locality 
 Contact.create(first_name: 'John', last_name: 'Doe', description: 'This is my new friend', phone: '1234567890',
                locality_code: Locality.first.assigned_code)
 
+Contact.create(first_name: 'Jane', last_name: 'Crow', description: 'This is my fake friend', phone: '0987654321',
+               locality_code: Locality.all[1].assigned_code)
+
+Contact.create(first_name: 'Ama', last_name: 'Moke', description: 'She made a bad movie', phone: '6789012345',
+               locality_code: Locality.all[2].assigned_code)
+
 ###############################################
 ####################  USERS ###################
 ###############################################

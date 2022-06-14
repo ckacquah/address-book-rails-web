@@ -49,8 +49,7 @@ class CityTownsController < ApplicationController
   # PATCH/PUT /city_towns/1 or /city_towns/1.json
   def update
     respond_to do |format|
-      @city_town, updated_successfully = @city_town.safe_update(city_town_params)
-      if updated_successfully
+      if @city_town.safe_update(city_town_params)
         flash[:success] = 'City was successfully updated.'
         format.html { redirect_to city_town_url(@city_town) }
         format.json { render :show, status: :ok, location: @city_town }

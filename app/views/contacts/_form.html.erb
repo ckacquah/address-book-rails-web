@@ -4,17 +4,15 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs row">
+  
     <%= f.input :first_name, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
     <%= f.input :last_name, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
     <%= f.input :phone, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
     <%= f.input :region, prompt: "Select the region", collection: Region.active_and_not_deleted.order(:name), label_method: :name, value_method: :assigned_code, input_html: {id: "region"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
-    
-        <%= f.input :cities, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "cities"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
-        <%= f.input :suburbs, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "suburbs"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
-    
+    <%= f.input :cities, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "cities"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
+    <%= f.input :suburbs, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "suburbs"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
+
     <% if  @contact.locality %>
-        <%#= f.input :cities, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "cities"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
-        <%#= f.input :suburbs, collection: @contact.locality.suburb.city_town.suburbs, label_method: :name, value_method: :assigned_code, input_html: {id: "suburbs"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
         <%= f.association :locality, collection: @contact.locality.suburb.localities, label_method: :name, value_method: :assigned_code, input_html: {id: "localities"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>
     <% else %>
         <%= f.association :locality, collection: [], label_method: :name, value_method: :assigned_code, input_html: {id: "localities"}, wrapper_html: {  class:"col-12 col-md-12 col-lg-6 col-xl-6"  } %>

@@ -5,12 +5,14 @@ $feature-bg: #12213B;
 $view-bg: #032264;
 
 .btn-feature {
+  // @include button-variant($view-bg, darken($view-bg, 3%));
+
   @include button-variant($feature-bg, darken($feature-bg, 3%));
 }
 
 
 .btn-view {
-    @include button-variant($feature-bg, darken($view-bg, 3%));
+    @include button-variant($view-bg, darken($view-bg, 3%));
 }
 
   

@@ -21,6 +21,7 @@ gem 'tzinfo-data'
 gem 'simple_form'
 gem 'webpacker'
 gem 'devise'
+gem 'pagy', '~> 5.10'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
